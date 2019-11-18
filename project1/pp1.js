@@ -3,24 +3,6 @@ db.employees.insert({})
 db.departments.insert({})
 db.users.insert({})
 
-db.users.insert({
-    name: 'Evgeniy Ivanov',
-    age: 25,
-    tokken_count: 0
-    addressCollection: {
-        city: 'Odessa',
-        county: 'Ukraine',
-        address: 'Black Sea',
-    }
-})
-
-db.users.find.pretty()
-
-db.users.insert({
-    _id: 'user_1',
-    name: 'Evgeniy Ivanov',
-    age: 25
-})
 
 var generateFname = function() {
     var collection = [
@@ -107,19 +89,6 @@ var generateEmail = function(name) {
     return name + collection[index];
 }
 //for users
-var generateBankAccount = function(currency) {
-    var bankaccountName;
-        
-    var{
-
-    bankaccountName = Math.floor((Math.random()*(700000000-30000000000+1)+300000000);
-    return 'BG30'+ bankaccountName +currency;
-}
-
-var generateAmountOfMoney = function(){
-    return Math.floor(Math.random() * 8000-3000 + 1) + 3000); 
-};
-}
 //for departments
 var generateDepartments = function(name){
     var collection = [
